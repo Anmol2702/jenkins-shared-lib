@@ -4,4 +4,5 @@ def call() {
         sh 'docker build -t anmol0503/docker-prac:2.0 .'
         sh "echo $pass | docker login -u $user --password-stdin"
         sh 'docker push anmol0503/docker-prac:2.0'
+    }
 }
